@@ -1,0 +1,75 @@
+.button-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: 4px solid white;
+  border-radius: 9999px;
+  font-size: medium;
+
+  font-weight: bold;
+  background: transparent;
+  color: white;
+
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+
+  z-index: 3;
+}
+  
+/* .button:hover {
+  background: white;
+  color: black;
+} */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .button {
+    padding: 0.5rem 1rem;
+    border: 4px solid white;
+    border-radius: 9999px;
+    font-size: medium;
+  
+    font-weight: bold;
+    background: transparent;
+    color: white;
+  
+    cursor: pointer;
+  
+    z-index: 3;
+  }
+
+  .button:hover { 
+    background: white; 
+    color: black; 
+  }
+}
+
+@media (orientation: portrait) and (hover: none) {
+  
+  @keyframes tapBlink {
+    
+    0% { 
+      background: white;      
+      color: black; 
+    }
+    
+    100% { 
+      background: transparent; 
+      color: white; 
+    }
+  }
+
+  .button { 
+    -webkit-tap-highlight-color: transparent; 
+  }
+
+  .button:active {
+    animation: tapBlink 200ms ease-out 1 both;
+    outline: none;
+  }
+}
