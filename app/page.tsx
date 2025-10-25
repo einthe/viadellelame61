@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import ScalingSection from "../app/components/scaling";
 // import Link from "next/link";
 import "../app/components/button.css";
+import {get_team_string} from "../app/components/get_team";
 
 export default function Home() {
   
@@ -16,7 +17,7 @@ export default function Home() {
             <div className={styles.text}>
               <h1>Floors</h1>
               <p>
-                Someone & Someone
+                {get_team_string("floors")}
               </p>
             </div>
           </div>
@@ -29,7 +30,7 @@ export default function Home() {
             <div className={styles.text}>
               <h1>Waste</h1>
               <p>
-                Someone & Someone
+                {get_team_string("waste")}
               </p>
             </div>
           </div>
@@ -42,7 +43,7 @@ export default function Home() {
             <div className={styles.text}>
               <h1>Kitchen</h1>
               <p>
-                Someone & Someone
+                {get_team_string("kitchen")}
               </p>
             </div>
           </div>
