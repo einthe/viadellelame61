@@ -117,3 +117,36 @@ a {
     color-scheme: dark;
   }
 }
+
+.Einar {
+  color: greenyellow;
+}
+
+.Neal {
+  color: #693E0D;
+}
+
+.Andrea {
+  color: purple;
+}
+
+.Shiori {
+  color: red;
+}
+
+.Kaisla {
+  color: magenta;
+}
+
+.Zhangjia {
+  color: black;
+  -webkit-text-stroke: 0.2px white;
+}
+
+.Tristan {
+  color: blue;
+}
+
+.Room2 {
+  color: red;
+}
